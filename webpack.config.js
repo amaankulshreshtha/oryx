@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(__dirname, 'src', 'index.tsx'),
+  entry: path.resolve(__dirname, 'packages', 'oryx', 'index.tsx'),
   watch: true,
   output: {
     path: path.resolve(__dirname, 'dist'),
