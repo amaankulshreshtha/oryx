@@ -1,0 +1,1 @@
+export const prependHover = (color: string): string => `hover${color[0].toUpperCase()}`
