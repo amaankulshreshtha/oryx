@@ -1,16 +1,46 @@
-import { GetButtonStyleInterface } from '../../../types/Button.interface';
-import getSolidButtonStyles from './getSolidButtonStyles';
-import getOutlineButtonStyles from './getOutlineButtonStyles';
+import { GetButtonStyleInterface, ReturnButtonTypeInterface } from '../../../types/Button.interface';
+import getLinkButtonStyles from './getLinkButtonStyles';
+import getSolidOrOutlineButtonStyles from './getSolidOrOutlineButtonStyles';
+import getDisbaledButtonStyles from './getDisbaledButtonStyles';
 
-const returnButtonType = (
-	_: TemplateStringsArray,
-	{ theme, outline, link, disabled, primary, contrast }: GetButtonStyleInterface
-): string => {
+const returnButtonType: ReturnButtonTypeInterface = ({
+	theme,
+	outline,
+	link,
+	disabled,
+	primary,
+	contrast,
+	hoverState = false
+}) => {
+	let backgroundColor: string = primary ? primary : 'blue';
+	let textColor: string = contrast ? contrast : 'white';
+
 	if (outline) {
-		return getOutlineButtonStyles(theme!, primary!, contrast!);
+		backgroundColor = primary ? primary : 'white';
+		textColor = contrast ? contrast : 'blue';
+
+		return getSolidOrOutlineButtonStyles(
+			theme!,
+			hoverState,
+			backgroundColor,
+			textColor
+		);
 	}
 
-	return getSolidButtonStyles(theme!, primary!, contrast!);
+	if (link) {
+		return getLinkButtonStyles(theme!, primary!, hoverState);
+	}
+
+	if (disabled) {
+		return getDisbaledButtonStyles(theme);
+	}
+
+	return getSolidOrOutlineButtonStyles(
+		theme!,
+		hoverState,
+		backgroundColor,
+		textColor
+	);
 };
 
 export const getButtonType = ({
@@ -21,14 +51,14 @@ export const getButtonType = ({
 	primary,
 	contrast
 }: GetButtonStyleInterface): string =>
-	returnButtonType`${{
+	returnButtonType({
 		theme,
 		outline,
 		link,
 		disabled,
 		primary,
 		contrast
-	}}`;
+	});
 
 export const getButtonHoveredType = ({
 	theme,
@@ -38,11 +68,12 @@ export const getButtonHoveredType = ({
 	primary,
 	contrast
 }: GetButtonStyleInterface): string =>
-	returnButtonType`${{
+	returnButtonType({
 		theme,
 		outline,
 		link,
 		disabled,
 		primary,
-		contrast
-	}}`;
+		contrast,
+		hoverState: true
+	});

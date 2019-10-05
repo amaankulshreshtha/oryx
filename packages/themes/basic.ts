@@ -9,7 +9,9 @@ interface Colors {
   pink?: string;
   orange?: string;
   white?: string;
-  black?: string
+  black?: string;
+  grey?: string;
+  darkGrey?: string;
 
   hoverBlue?: string;
   hoverGreen?: string;
@@ -20,7 +22,9 @@ interface Colors {
   hoverPink?: string;
   hoverOrange?: string;
   hoverWhite?: string;
-  hoverBlack?: string
+  hoverBlack?: string;
+  hoverGrey?: string;
+  hoverDarkGrey?: string;
 };
 
 const colors: Colors = {
@@ -32,6 +36,9 @@ const colors: Colors = {
   teal: '#0097A7',
   pink: '#EC407A',
   orange: '#FB8C00',
+  grey: '#EEEEEE',
+  darkGrey: '#757575',
+
   hoverBlue: '#1565C0',
   hoverGreen: '#00796B',
   hoverRed: '#D32F2F',
@@ -41,3 +48,7 @@ const colors: Colors = {
   hoverPink: '#EC407A',
   hoverOrange: '#FB8C00',
 }
+
+export default {
+  colors
+};
