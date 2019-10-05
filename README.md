@@ -22,6 +22,7 @@ Oryx is a frontend framework based on [React](https://github.com/facebook/react/
 - [x] Create a generic interface so that user can add their own interfaces
 - [x] Module setup, expose Button as a named export and also part of Oryx
 - [x] Refactor code
+- [ ] Install storybook and test the component
 
 ## Examples
 
