@@ -10,6 +10,8 @@ Oryx is a frontend framework based on [React](https://github.com/facebook/react/
 
 - [x] Scaffolding of the project; `Typescript`, `React`, `EmotionJS`, `Webpack`
 - [ ] Develop Button Component
+- [ ] Turn it into a monorepo
+- [ ] Install `storybook` and test the components
 - [ ] Add responsive behavior
 - [ ] Write Unit tests
 - [ ] Expose API to take custom theme
