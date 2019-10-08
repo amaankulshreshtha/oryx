@@ -5,4 +5,6 @@ const Oryx = {
   Button
 }
 
+export { Button as Button };
+
 export default Oryx;

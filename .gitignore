@@ -62,3 +62,12 @@ typings/
 
 # Output Directories
 dist
+
+# Source maps
+*.js.map
+
+# Output Files
+index.js
+
+# Declaration Files
+*.d.ts

@@ -1,0 +1,22 @@
+{
+  "name": "@oryx/themes",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Amaan Kulshreshtha <amaan.kulshreshtha@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmaanKulshreshtha/oryx.git",
+    "directory": "packages/oryx"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "start": "tsc"
+  }
+}
