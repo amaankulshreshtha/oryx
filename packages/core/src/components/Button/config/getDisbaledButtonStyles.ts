@@ -1,5 +1,5 @@
-import { ThemeInterface } from '../../../types/Button.interface';
-import basic from '../../../../themes/basic';
+import basic from '@oryx/themes';
+import ThemeInterface from 'Typings/Theme.interface';
 
 export default (
 	theme: ThemeInterface = basic,

@@ -49,6 +49,8 @@ const colors: Colors = {
   hoverOrange: '#FB8C00',
 }
 
-export default {
+const basic = {
   colors
-};
+}
+
+export default basic;

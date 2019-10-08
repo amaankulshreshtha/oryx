@@ -1,6 +1,6 @@
-import { ThemeInterface } from '../../../types/Button.interface';
+import basic from '@oryx/themes';
+import ThemeInterface from 'Typings/Theme.interface';
 import { getHoverColor } from '../helpers/utils';
-import basic from '../../../../themes/basic';
 
 export default (
 	theme: ThemeInterface = basic,
