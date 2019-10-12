@@ -1,5 +1,6 @@
 const path = require('path');
-console.log(path.join(process.cwd(), 'lib'))
+const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, 'index.tsx'),
@@ -21,6 +22,9 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
+  plugins: [
+    new CleanWebpackPlugin()
+  ],
   devtool: 'source-map',
   devServer: {
     contentBase: path.join(__dirname, 'public')

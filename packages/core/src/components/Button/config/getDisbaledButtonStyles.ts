@@ -1,5 +1,5 @@
 import basic from '@oryx/themes';
-import ThemeInterface from 'Typings/Theme.interface';
+import ThemeInterface from 'types/Theme.interface';
 
 export default (
 	theme: ThemeInterface = basic,

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { getButtonType, getButtonHoveredType } from './config';
 
-export const ButtonComponent = styled.button`
+const ButtonComponent = styled.button`
   &:active,
   &:visited {
     outline: none;
@@ -25,3 +25,5 @@ export const ButtonComponent = styled.button`
     ${getButtonHoveredType}
   }
 `;
+
+export default ButtonComponent;

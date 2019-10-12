@@ -1,4 +1,4 @@
-import { GetButtonStyleInterface, ReturnButtonTypeInterface } from 'Typings/Button.interface';
+import { GetButtonStyleInterface, ReturnButtonTypeInterface } from '../types/index.interface';
 import getLinkButtonStyles from './getLinkButtonStyles';
 import getSolidOrOutlineButtonStyles from './getSolidOrOutlineButtonStyles';
 import getDisbaledButtonStyles from './getDisbaledButtonStyles';

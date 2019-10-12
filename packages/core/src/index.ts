@@ -1,10 +1,7 @@
-import { Button } from "./components/Button";
+import Button from './components/Button';
 
-// import everything from components and export as oryx
-const Oryx = {
+export { Button };
+
+export default {
   Button
 }
-
-export { Button as Button };
-
-export default Oryx;

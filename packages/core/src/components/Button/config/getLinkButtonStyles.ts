@@ -1,5 +1,5 @@
 import basic from '@oryx/themes';
-import ThemeInterface from 'Typings/Theme.interface';
+import ThemeInterface from 'types/Theme.interface';
 import { getHoverColor } from '../helpers/utils';
 
 export default (

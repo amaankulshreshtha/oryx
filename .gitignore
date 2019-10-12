@@ -62,6 +62,7 @@ typings/
 
 # Output Directories
 dist
+lib
 
 # Source maps
 *.js.map
