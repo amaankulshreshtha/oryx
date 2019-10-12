@@ -1,6 +1,6 @@
 # Oryx
 
-Oryx is a frontend framework based on [React](https://github.com/facebook/react/) and [EmotionJS](https://github.com/emotion-js/emotion) that will help you build amazing websites with your own branding.
+Oryx is a resusable-components library based on [React](https://github.com/facebook/react/) and [EmotionJS](https://github.com/emotion-js/emotion) that will help you build amazing websites with your own branding, without having to build your own "design system"
 
 - **Customizable**: The framework exposes an API which will take a `theme.js` file that will allow you to generate reusable components with your custom branding.
 - **Responsive Websites**: The framework will also provide you with responsive behavior for your website
