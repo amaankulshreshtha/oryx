@@ -1,13 +1,18 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "rootDirs": ["src"],
+    "baseUrl": "src",
     "paths": {
       "Components/*": ["components/*"],
       "Typings/*": ["typings/*"]
     },
     "declaration": true,
-    "outDir": "./lib"
-  }
+    "outDir": "./lib",
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"]
 }

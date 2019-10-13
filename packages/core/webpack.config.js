@@ -16,10 +16,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: [
           {
-            loader:'babel-loader'
+            loader: require.resolve('awesome-typescript-loader'),
           },
           {
-            loader: 'ts-loader'
+            loader: require.resolve('react-docgen-typescript-loader')
           }
         ],
         exclude: /node_modules/
